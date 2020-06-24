@@ -11,7 +11,6 @@ const Contact = () => {
   const [status, setStatus] = useState('');
   const { formatMessage } = useIntl();
 
-  // eslint-disable-next-line
   const submitForm = ev => {
     ev.preventDefault();
     const form = ev.target;

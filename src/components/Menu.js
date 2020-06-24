@@ -14,7 +14,7 @@ const Menu = () => {
   const { formatMessage } = useIntl();
 
   return (
-    <menu className="z-10 menu pl-2 md:pl-0 md:ml-0">
+    <div className="z-10 menu pl-2 md:pl-0 md:ml-0">
       <div className="container relative mx-auto max-w-6xl pr-5 flex justify-between items-center">
         <Link
           to={'/index'}
@@ -65,7 +65,7 @@ const Menu = () => {
         </ul>
         <Language />
       </div>
-    </menu>
+    </div>
   );
 };
 
