@@ -15,7 +15,6 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-preact',
-    'gatsby-plugin-htaccess',
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
