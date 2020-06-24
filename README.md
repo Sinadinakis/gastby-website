@@ -1,5 +1,7 @@
 # Gastby-website
 
+This is a website build in gatsby and tailwindCss
+
 ## 🚀 Quick start
 
 **Install Gatsby on your machine globally.**
@@ -15,7 +17,7 @@ npm install -g gatsby-cli
     Navigate into cloned dir.
 
     ```shell
-    cd Calculator/
+    cd gatsby-website/
     gatsby develop
     ```
 
