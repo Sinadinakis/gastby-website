@@ -22,7 +22,7 @@ const Language = () => {
               // eslint-disable-next-line
               onClick={() => changeLocale(language)}
               className={`ml-4 cursor-pointer ${
-                currentLocale === language ? `text-yellow-200` : `text-white`
+                currentLocale === language ? `text-yellow-500` : `text-white`
               }  hover:text-yellow-600`}
             >
               {languageName[language]}

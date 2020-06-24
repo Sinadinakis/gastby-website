@@ -16,11 +16,7 @@ const Menu = () => {
   return (
     <div className="z-10 menu pl-2 md:pl-0 md:ml-0">
       <div className="container relative mx-auto max-w-6xl pr-5 flex justify-between items-center">
-        <Link
-          to={'/index'}
-          className="text-xl left-0"
-          style={{ outline: 'none' }}
-        >
+        <Link to={'/'} className="text-xl left-0" style={{ outline: 'none' }}>
           <span
             className="fill-current bg-no-repeat inline-block w-40 h-12 shadow-2xl"
             style={{
@@ -31,32 +27,32 @@ const Menu = () => {
           />
         </Link>
 
-        <ul className="hidden md:flex uppercase tracking-wider text-sm text-gray-200">
-          <li className="ml-6">
+        <ul className="hidden md:flex uppercase tracking-wider text-sm text-gray-300">
+          <li>
             <Link
               to="/story"
-              activeStyle={{ color: 'white' }}
-              className=" hover:text-white"
+              activeStyle={{ color: 'white', borderBottom: '1px solid white' }}
+              className=" hover:text-yellow-400"
               partiallyActive={true}
             >
               {formatMessage(menuMessages.menuStory)}
             </Link>
           </li>
-          <li className="ml-6">
+          <li className="ml-16">
             <Link
               to="/wines"
-              activeStyle={{ color: 'white' }}
-              className=" hover:text-white"
+              activeStyle={{ color: 'white', borderBottom: '1px solid white' }}
+              className=" hover:text-yellow-400"
               partiallyActive={true}
             >
               {formatMessage(menuMessages.menuWines)}
             </Link>
           </li>
-          <li className="ml-6">
+          <li className="ml-16">
             <Link
               to="/contact"
-              activeStyle={{ color: 'white' }}
-              className=" hover:text-white"
+              activeStyle={{ color: 'white', borderBottom: '1px solid white' }}
+              className=" hover:text-yellow-400"
               partiallyActive={true}
             >
               {formatMessage(menuMessages.menuContact)}

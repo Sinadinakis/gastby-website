@@ -18,25 +18,23 @@ const Home = () => {
       />
       <Menu />
       <BackgroundSection>
-        <div className="container mx-auto">
-          <section id="hero" className={'container mx-auto'}>
-            <div className="absolute top-0 h-full flex items-center mt-8 px-2 md:px-12">
-              <div className="shadow-2xl">
-                <h1 className="text-2xl md:text-5xl text-shadow leading-tight font-nunito">
-                  {formatMessage({ id: 'home.title' })}
-                  <Link
-                    to={'/story'}
-                    className="text-yellow-300 hover:text-yellow-500 cursor-pointer inline"
-                  >
-                    {formatMessage({ id: 'home.winery' })}
-                  </Link>
-                  <br />
-                  <small>{formatMessage({ id: 'home.subtitle' })}</small>
-                </h1>
-              </div>
+        <section id="hero" className={'container mx-auto'}>
+          <div className="absolute top-0 h-full flex items-center mt-8 px-2 md:px-12">
+            <div className="shadow-2xl">
+              <h1 className="text-2xl md:text-5xl text-shadow leading-tight font-nunito">
+                {formatMessage({ id: 'home.title' })}
+                <Link
+                  to={'/story'}
+                  className="text-yellow-500 hover:text-yellow-300 cursor-pointer inline"
+                >
+                  {formatMessage({ id: 'home.winery' })}
+                </Link>
+                <br />
+                <small>{formatMessage({ id: 'home.subtitle' })}</small>
+              </h1>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </BackgroundSection>
 
       <section
@@ -62,7 +60,11 @@ const Home = () => {
                 to={'/story'}
                 className="block text-2xl text-black text-center mb-4 hover:bg-white hover:opacity-75 cursor-pointer"
               >
-                <Image name="producer" alt="Producer Sinadinakis " />
+                <Image
+                  name="producer"
+                  alt="Producer Sinadinakis"
+                  style={{ filter: 'sepia(0.5) contrast(0.9) saturate(2)' }}
+                />
                 {formatMessage({ id: 'home.aboutUs' })}
               </Link>
             </div>
@@ -72,7 +74,11 @@ const Home = () => {
                 to={'/wines'}
                 className="block text-2xl text-black text-center mb-4 hover:bg-white hover:opacity-75 cursor-pointer"
               >
-                <Image name="wines" alt="Sinadinakis Organic Wines" />
+                <Image
+                  name="wines"
+                  alt="Sinadinakis Organic Wines"
+                  style={{ filter: 'sepia(0.5) contrast(0.9) saturate(2)' }}
+                />
                 {formatMessage({ id: 'home.wine' })}
               </Link>
             </div>

@@ -26,6 +26,7 @@ const BackgroundSection = ({ className, children }) => (
         <BackgroundImage
           Tag="header"
           className={className}
+          style={{ filter: 'contrast(1.1) saturate(1.2)' }}
           fluid={imageData}
           backgroundColor={`#040e18`}
         >

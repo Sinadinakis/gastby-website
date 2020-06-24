@@ -23,7 +23,7 @@ export const squareImage = graphql`
   }
 `;
 
-const Image = ({ name, className, wrapperClassName, alt }) => {
+const Image = ({ name, className, wrapperClassName, alt, style }) => {
   const data = useStaticQuery(graphql`
     query {
       producer: file(relativePath: { eq: "producer.jpg" }) {
@@ -158,6 +158,7 @@ const Image = ({ name, className, wrapperClassName, alt }) => {
     <Img
       fluid={data[name].childImageSharp.fluid}
       className={clsx(className, wrapperClassName)}
+      style={style}
       alt={alt}
     />
   );
@@ -171,6 +172,7 @@ Image.propTypes = {
   alt: PropTypes.string,
   className: PropTypes.string,
   name: PropTypes.string,
+  style: PropTypes.object,
   wrapperClassName: PropTypes.string,
 };
 

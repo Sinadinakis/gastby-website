@@ -69,7 +69,7 @@ const Layout = ({ children, name }) => {
       <Global
         styles={css`
           .text-shadow {
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
           }
 
           .text-shadow-md {
