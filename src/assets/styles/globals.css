@@ -1,0 +1,13 @@
+/*
+  Inject Tailwind's base styles and use the Tailwind Macro with emotion to use
+  the rest of Tailwind's classes in the project
+*/
+@import './menu.css';
+
+/*noinspection CssInvalidAtRule*/
+@tailwind base;
+
+/*noinspection CssInvalidAtRule*/
+@tailwind components;
+/*noinspection CssInvalidAtRule*/
+@tailwind utilities;
