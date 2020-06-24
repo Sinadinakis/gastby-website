@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { IntlProvider } from 'react-intl';
 import { Helmet } from 'react-helmet';
 
-
 // Translations
 import messages_en from '../intl/en.json';
 import messages_el from '../intl/el.json';
@@ -38,10 +37,14 @@ const Layout = ({ children, name }) => {
   const [lang, dispatch] = useGlobalState('lang');
 
   useEffect(() => {
-    if(name !== '404') {
-      dispatch({ type: 'LANGUAGE_UPDATE', payload: { lang: getRedirectLanguage() } });
+    if (name !== '404') {
+      dispatch({
+        type: 'LANGUAGE_UPDATE',
+        payload: { lang: getRedirectLanguage() },
+      });
     }
-  }, [name])
+    // eslint-disable-next-line
+  }, [name]);
 
   if (!language) {
     language = getRedirectLanguage();
@@ -90,6 +93,7 @@ const Layout = ({ children, name }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  name: PropTypes.string,
 };
 
 export default Layout;

@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import clsx from 'clsx';
@@ -24,7 +24,6 @@ export const squareImage = graphql`
 `;
 
 const Image = ({ name, className, wrapperClassName, alt }) => {
-  console.log(alt)
   const data = useStaticQuery(graphql`
     query {
       producer: file(relativePath: { eq: "producer.jpg" }) {
@@ -54,7 +53,7 @@ const Image = ({ name, className, wrapperClassName, alt }) => {
           }
         }
       }
-      merloLabel : file(relativePath: { eq: "wines-2.jpg" }) {
+      merloLabel: file(relativePath: { eq: "wines-2.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid_withWebp
@@ -169,9 +168,10 @@ Image.defaultProps = {
 };
 
 Image.propTypes = {
+  alt: PropTypes.string,
+  className: PropTypes.string,
   name: PropTypes.string,
-  class: PropTypes.string,
-  className: PropTypes.string
-}
+  wrapperClassName: PropTypes.string,
+};
 
 export default Image;

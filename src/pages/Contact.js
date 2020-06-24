@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useIntl } from "gatsby-plugin-intl";
+import { useIntl } from 'gatsby-plugin-intl';
 
 // Components
 import Seo from '../components/seo';
@@ -10,7 +10,8 @@ import Image from '../components/Image';
 const Contact = () => {
   const [status, setStatus] = useState('');
   const { formatMessage } = useIntl();
-  
+
+  // eslint-disable-next-line
   const submitForm = ev => {
     ev.preventDefault();
     const form = ev.target;
@@ -32,9 +33,9 @@ const Contact = () => {
 
   return (
     <>
-      <Seo 
-        title={formatMessage({ id: "contact.seoTitle" })}
-        description={formatMessage({ id: "contact.seoDescription"})} 
+      <Seo
+        title={formatMessage({ id: 'contact.seoTitle' })}
+        description={formatMessage({ id: 'contact.seoDescription' })}
       />
       <Menu />
       <div className="w-full bg-blue-600">
@@ -48,7 +49,7 @@ const Contact = () => {
       <div className="py-10 px-6">
         <div className="max-w-6xl mx-auto mb-8 px-2 md:px-20">
           <h1 className="text-left text-2xl md:text-4xl max-w-3xl leading-tight text-gray-800 mb-10">
-            {formatMessage({ id: "contact.header" })}
+            {formatMessage({ id: 'contact.header' })}
           </h1>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5600.801577445772!2d25.156684077848688!3d35.23395687693614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149af63b97efa8e1%3A0xf628661a6f71bcdd!2sSinadinakis%20Winery!5e0!3m2!1sen!2snl!4v1591622729922!5m2!1sen!2snl"
@@ -63,13 +64,12 @@ const Contact = () => {
         </div>
 
         <div className="max-w-6xl mx-auto mb-8 px-2md:px-20 leading-relaxed">
-          <p className="italic">
-            {formatMessage({ id: "contact.message" })}
-          </p>
+          <p className="italic">{formatMessage({ id: 'contact.message' })}</p>
         </div>
         <div className="max-w-5xl mx-auto flex flex-wrap items-start">
           <div className="w-full  md:w-1/2 p-2">
             <form
+              // eslint-disable-next-line
               onSubmit={submitForm}
               className="w-full max-w-lg"
               method="post"
@@ -83,7 +83,7 @@ const Contact = () => {
                     className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    {formatMessage({ id: "contact.form.input.name" })}
+                    {formatMessage({ id: 'contact.form.input.name' })}
                   </label>
                   <input
                     className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -102,7 +102,7 @@ const Contact = () => {
                     className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    {formatMessage({ id: "contact.form.input.email" })}
+                    {formatMessage({ id: 'contact.form.input.email' })}
                   </label>
                   <input
                     className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -121,7 +121,7 @@ const Contact = () => {
                     className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    {formatMessage({ id: "contact.form.input.message" })}
+                    {formatMessage({ id: 'contact.form.input.message' })}
                   </label>
                   <textarea
                     className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
@@ -136,11 +136,11 @@ const Contact = () => {
                   {status === 'SUCCESS' ? (
                     <p>Thanks!</p>
                   ) : (
-                    <button 
+                    <button
                       className="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                       aria-label="button submit contact form"
                     >
-                      {formatMessage({ id: "contact.form.input.submit" })}
+                      {formatMessage({ id: 'contact.form.input.submit' })}
                     </button>
                   )}
                   {status === 'ERROR' && <p>Ooops! There was an error.</p>}
@@ -150,13 +150,12 @@ const Contact = () => {
             </form>
           </div>
           <div className="w-full md:w-1/2 p-2">
-            <Image name="slide9" alt="Producer Sinadinakis in wineyard"/>
+            <Image name="slide9" alt="Producer Sinadinakis in wineyard" />
           </div>
         </div>
       </div>
       <Footer />
     </>
-
   );
 };
 

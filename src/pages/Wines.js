@@ -1,6 +1,6 @@
 import React from 'react';
 import Seo from '../components/seo';
-import { useIntl } from "gatsby-plugin-intl";
+import { useIntl } from 'gatsby-plugin-intl';
 
 // Messages
 import winesMessages from '../messages/winesMessages';
@@ -18,16 +18,16 @@ const Wines = () => {
   const { formatMessage } = useIntl();
 
   const wineInfo = [
-    formatMessage({id: "wines.wine.info.protected.region"}),
-    formatMessage({id: "wines.wine.info.aged"}),
-    formatMessage({id: "'wines.wine.info.Bio'"}),
-    formatMessage({id: "wines.wine.info.vinification"}),
+    formatMessage({ id: 'wines.wine.info.protected.region' }),
+    formatMessage({ id: 'wines.wine.info.aged' }),
+    formatMessage({ id: "'wines.wine.info.Bio'" }),
+    formatMessage({ id: 'wines.wine.info.vinification' }),
   ];
 
   const whiteWineInfo = [
-    formatMessage({id: "wines.wine.info.protected.region"}),
-    formatMessage({id: "wines.wine.info.controlled"}),
-    formatMessage({id: "wines.wine.info.Bio"}),
+    formatMessage({ id: 'wines.wine.info.protected.region' }),
+    formatMessage({ id: 'wines.wine.info.controlled' }),
+    formatMessage({ id: 'wines.wine.info.Bio' }),
   ];
 
   return (
@@ -51,13 +51,13 @@ const Wines = () => {
 
         <div className="max-w-5xl mx-auto flex flex-wrap items-start">
           <div className="w-full  md:w-2/6 p-2 mb-2">
-            <Image name="bottle2" alt="Kotsifali cretan organic wine"/>
+            <Image name="bottle2" alt="Kotsifali cretan organic wine" />
           </div>
           <div className="w-full md:w-2/6 p-2 mb-2">
-            <Image name="bottle1" alt="Dry red organic wine"/>
+            <Image name="bottle1" alt="Dry red organic wine" />
           </div>
           <div className="w-full md:w-2/6 p-2 mb-2">
-            <Image name="bottle3" alt="Dry white organic wine"/>
+            <Image name="bottle3" alt="Dry white organic wine" />
           </div>
         </div>
 
@@ -69,10 +69,13 @@ const Wines = () => {
             <p className="ml-2 text-gray-800 text-left h-20 mb-6 italic">
               {formatMessage(winesMessages.kostifaliContent)}
             </p>
-            <Image name="kotsifaliLabel" alt="Label of Kotsifali and Cabernet Sauvignon"/>
+            <Image
+              name="kotsifaliLabel"
+              alt="Label of Kotsifali and Cabernet Sauvignon"
+            />
             <div className="ml-2 text-gray-800 text-left leading-relaxed text-sm">
               {wineInfo.map(item => (
-                <div key={`icon-${item}`}>
+                <div key={`kotsifali-icon-${item}`}>
                   <Icon
                     src={checkIcon}
                     className="cursor-pointer absolute p-15"
@@ -125,11 +128,14 @@ const Wines = () => {
             <p className="ml-2 text-gray-800 text-left leading-relaxed h-20 mb-6 italic">
               {formatMessage(winesMessages.chardonnayContent)}
             </p>
-            <Image name="chardonnayLabel" alt="Label Chardonnay and Sauvignon blanc" />
+            <Image
+              name="chardonnayLabel"
+              alt="Label Chardonnay and Sauvignon blanc"
+            />
             <div className="ml-2 text-gray-800 text-left text-sm">
               <div>
                 {whiteWineInfo.map(item => (
-                  <div>
+                  <div key={`chardonnay-icons-${item}`}>
                     <Icon
                       src={checkIcon}
                       className="cursor-pointer absolute p-15 "
@@ -149,11 +155,11 @@ const Wines = () => {
             <p className="ml-2 text-gray-800 text-left h-20 mb-6 italic">
               {formatMessage(winesMessages.merloContent)}
             </p>
-            <Image name="merloLabel" alt="Label Merlo and Kotsifali"/>
+            <Image name="merloLabel" alt="Label Merlo and Kotsifali" />
             <div className="ml-2 text-gray-800 text-left leading-relaxed text-sm">
               <div>
                 {wineInfo.map(item => (
-                  <div>
+                  <div key={`merlo-icons-${item}`}>
                     <Icon
                       src={checkIcon}
                       className="cursor-pointer absolute p-15 "
@@ -186,11 +192,11 @@ const Wines = () => {
             <p className="ml-2 text-gray-800 text-left h-20 min-h-full mb-6 italic">
               {formatMessage(winesMessages.loumataContent)}
             </p>
-            <Image name="loumataLabel" alt="Label Assyrtiko and Vidiano"/>
+            <Image name="loumataLabel" alt="Label Assyrtiko and Vidiano" />
             <div className="ml-2 text-gray-800 text-left leading-relaxed text-sm">
               <div>
                 {whiteWineInfo.map(item => (
-                  <div>
+                  <div key={`loumata-icons-${item}`}>
                     <Icon
                       src={checkIcon}
                       className="cursor-pointer absolute p-15 "

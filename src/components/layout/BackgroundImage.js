@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { graphql, StaticQuery } from 'gatsby';
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
@@ -17,6 +18,7 @@ const BackgroundSection = ({ className, children }) => (
         }
       }
     `}
+    // eslint-disable-next-line
     render={data => {
       // Set ImageData.
       const imageData = data.desktop.childImageSharp.fluid;
@@ -33,6 +35,11 @@ const BackgroundSection = ({ className, children }) => (
     }}
   />
 );
+
+BackgroundSection.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+};
 
 export default styled(BackgroundSection)`
   ${tw`w-full h-screen relative text-white`}
