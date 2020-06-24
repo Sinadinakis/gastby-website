@@ -1,10 +1,7 @@
 import React from 'react';
-import { useIntl, Link } from "gatsby-plugin-intl";
+import { useIntl, Link } from 'gatsby-plugin-intl';
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
-
-// Components
-import Icon from './Icon';
 
 // Messages
 import menuMessages from '../messages/menuMessages';
@@ -13,14 +10,11 @@ import menuMessages from '../messages/menuMessages';
 import logo from '../assets/icons/logo.png';
 import Language from './Language';
 
-// Hooks
-import { useGlobalState } from '../services/GlobalStore/GlobalStore';
-
 const Menu = () => {
   const { formatMessage } = useIntl();
 
   return (
-    <menu className='z-10 menu pl-2 md:pl-0 md:ml-0'>
+    <menu className="z-10 menu pl-2 md:pl-0 md:ml-0">
       <div className="container relative mx-auto max-w-6xl pr-5 flex justify-between items-center">
         <Link
           to={'/index'}
@@ -37,21 +31,34 @@ const Menu = () => {
           />
         </Link>
 
-        <ul
-          className="hidden md:flex uppercase tracking-wider text-sm text-gray-200"
-        >
+        <ul className="hidden md:flex uppercase tracking-wider text-sm text-gray-200">
           <li className="ml-6">
-            <Link to="/story" activeStyle={{ color: "white" }} className=" hover:text-white" partiallyActive={true}>
+            <Link
+              to="/story"
+              activeStyle={{ color: 'white' }}
+              className=" hover:text-white"
+              partiallyActive={true}
+            >
               {formatMessage(menuMessages.menuStory)}
             </Link>
           </li>
           <li className="ml-6">
-            <Link to="/wines" activeStyle={{ color: "white" }} className=" hover:text-white" partiallyActive={true}>
+            <Link
+              to="/wines"
+              activeStyle={{ color: 'white' }}
+              className=" hover:text-white"
+              partiallyActive={true}
+            >
               {formatMessage(menuMessages.menuWines)}
             </Link>
           </li>
           <li className="ml-6">
-            <Link to="/contact" activeStyle={{ color: "white" }} className=" hover:text-white" partiallyActive={true}>
+            <Link
+              to="/contact"
+              activeStyle={{ color: 'white' }}
+              className=" hover:text-white"
+              partiallyActive={true}
+            >
               {formatMessage(menuMessages.menuContact)}
             </Link>
           </li>

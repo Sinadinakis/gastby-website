@@ -1,7 +1,6 @@
 import React from 'react';
-import { navigate } from 'gatsby';
 import Seo from '../components/seo';
-import { useIntl, Link } from "gatsby-plugin-intl";
+import { useIntl, Link } from 'gatsby-plugin-intl';
 
 // Components
 import Menu from '../components/Menu';
@@ -13,9 +12,9 @@ const Home = () => {
   const { formatMessage } = useIntl();
   return (
     <>
-      <Seo 
-        title={formatMessage({ id: "home.seoTitle" })}
-        description={formatMessage({ id: "home.seoDescription"})} 
+      <Seo
+        title={formatMessage({ id: 'home.seoTitle' })}
+        description={formatMessage({ id: 'home.seoDescription' })}
       />
       <Menu />
       <BackgroundSection>
@@ -24,15 +23,15 @@ const Home = () => {
             <div className="absolute top-0 h-full flex items-center mt-8 px-2 md:px-12">
               <div className="shadow-2xl">
                 <h1 className="text-2xl md:text-5xl text-shadow leading-tight font-nunito">
-                  {formatMessage({id: "home.title"})}
+                  {formatMessage({ id: 'home.title' })}
                   <Link
-                    to={'/story'} 
+                    to={'/story'}
                     className="text-yellow-300 hover:text-yellow-500 cursor-pointer inline"
                   >
-                    {formatMessage({id: "home.winery"})}
+                    {formatMessage({ id: 'home.winery' })}
                   </Link>
                   <br />
-                  <small>{formatMessage({id: "home.subtitle"})}</small>
+                  <small>{formatMessage({ id: 'home.subtitle' })}</small>
                 </h1>
               </div>
             </div>
@@ -47,10 +46,13 @@ const Home = () => {
         <div className="pt-24 pb-6 px-6">
           <div className="max-w-6xl mx-auto mb-12">
             <h2 className="mx-auto text-center text-xl md:text-4xl max-w-3xl leading-tight text-gray-800 mb-12">
-              {formatMessage({id: "home.header"}, { breakpoint: <br className="hidden md:block"/>})}
+              {formatMessage(
+                { id: 'home.header' },
+                { breakpoint: <br className="hidden md:block" /> }
+              )}
             </h2>
             <p className="mb-6 text-gray-700 text-lg mx-auto max-w-lg text-center leading-relaxed">
-              {formatMessage({id: "home.content"})}
+              {formatMessage({ id: 'home.content' })}
             </p>
           </div>
 
@@ -60,8 +62,8 @@ const Home = () => {
                 to={'/story'}
                 className="block text-2xl text-black text-center mb-4 hover:bg-white hover:opacity-75 cursor-pointer"
               >
-                <Image name="producer" alt="Producer Sinadinakis "/>
-                {formatMessage({id: "home.aboutUs"})}
+                <Image name="producer" alt="Producer Sinadinakis " />
+                {formatMessage({ id: 'home.aboutUs' })}
               </Link>
             </div>
 
@@ -70,8 +72,8 @@ const Home = () => {
                 to={'/wines'}
                 className="block text-2xl text-black text-center mb-4 hover:bg-white hover:opacity-75 cursor-pointer"
               >
-                <Image name="wines" alt="Sinadinakis Organic Wines"/>
-                {formatMessage({id: "home.wine"})}
+                <Image name="wines" alt="Sinadinakis Organic Wines" />
+                {formatMessage({ id: 'home.wine' })}
               </Link>
             </div>
           </div>

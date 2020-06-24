@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { useIntl } from "gatsby-plugin-intl";
+import { useIntl } from 'gatsby-plugin-intl';
 
 // Messages
 import storyMessages from '../messages/storyMessages';
@@ -15,8 +14,8 @@ const Story = () => {
   const { formatMessage } = useIntl();
   return (
     <>
-      <Seo 
-        title={formatMessage(storyMessages.seoTitle)} 
+      <Seo
+        title={formatMessage(storyMessages.seoTitle)}
         description={formatMessage(storyMessages.seoDescription)}
       />
       <Menu />
@@ -44,7 +43,7 @@ const Story = () => {
 
         <div className="max-w-5xl mx-auto flex flex-wrap items-start">
           <div className="w-full p-2">
-            <Image name="slide1" alt="Sinadinakis in the vineyards"/>
+            <Image name="slide1" alt="Sinadinakis in the vineyards" />
           </div>
         </div>
 
@@ -54,10 +53,10 @@ const Story = () => {
 
         <div className="max-w-5xl mx-auto flex flex-wrap items-start">
           <div className="w-full  md:w-1/2 p-2">
-            <Image name="mountain" alt="Yuchtas mountain in Archanes"/>
+            <Image name="mountain" alt="Yuchtas mountain in Archanes" />
           </div>
           <div className="w-full md:w-1/2 p-2">
-            <Image name="location" alt="Archanes village in Heraklion, crete"/>
+            <Image name="location" alt="Archanes village in Heraklion, crete" />
           </div>
         </div>
 
@@ -67,19 +66,25 @@ const Story = () => {
 
         <div className="max-w-5xl mx-auto flex flex-wrap items-start">
           <div className="w-full  md:w-1/2 p-2">
-            <Image name="slide5" alt="Sinadinakis family working in the wineyard"/>
+            <Image
+              name="slide5"
+              alt="Sinadinakis family working in the wineyard"
+            />
           </div>
           <div className="w-full md:w-1/2 p-2">
-            <Image name="slide6" alt="Load organic grapes durin harvest"/>
+            <Image name="slide6" alt="Load organic grapes durin harvest" />
           </div>
         </div>
 
         <div className="max-w-5xl mx-auto flex flex-wrap items-start">
           <div className="w-full  md:w-1/2 p-2">
-            <Image name="slide2" alt="Producer sinadinakis working in the harvest" />
+            <Image
+              name="slide2"
+              alt="Producer sinadinakis working in the harvest"
+            />
           </div>
           <div className="w-full md:w-1/2 p-2">
-            <Image name="slide10" alt="Friend helping in the harvest "/>
+            <Image name="slide10" alt="Friend helping in the harvest " />
           </div>
         </div>
       </div>
