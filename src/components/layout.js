@@ -1,71 +1,19 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { IntlProvider } from 'react-intl';
 import { Helmet } from 'react-helmet';
-
-// Translations
-import messages_en from '../intl/en.json';
-import messages_el from '../intl/el.json';
-
-import { useGlobalState } from '../services/GlobalStore/GlobalStore';
 import { Global, css } from '@emotion/core';
 
-const messages = {
-  en: messages_en,
-  el: messages_el,
-};
-
-export const getRedirectLanguage = () => {
-  if (typeof navigator === `undefined`) {
-    return 'en';
-  }
-
-  const lang =
-    navigator && navigator.language && navigator.language.split('-')[0];
-  if (!lang) return 'en';
-  switch (lang) {
-    case 'el':
-      return 'el';
-    default:
-      return 'en';
-  }
-};
-
-let language;
-
-const Layout = ({ children, name }) => {
-  const [lang, dispatch] = useGlobalState('lang');
-
-  useEffect(() => {
-    if (name !== '404') {
-      dispatch({
-        type: 'LANGUAGE_UPDATE',
-        payload: { lang: getRedirectLanguage() },
-      });
-    }
-    // eslint-disable-next-line
-  }, [name]);
-
-  if (!language) {
-    language = getRedirectLanguage();
-  } else {
-    language = lang;
-  }
-
+const Layout = ({ lang, children }) => {
   return (
     <>
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang,
+        }}
+      >
         <meta charSet="utf-8" />
       </Helmet>
-      <div className={'mx-0'}>
-        <IntlProvider
-          locale={language}
-          key={language}
-          messages={messages[language]}
-        >
-          <div>{children}</div>
-        </IntlProvider>
-      </div>
+      <div className={'mx-0'}>{children}</div>
       <Global
         styles={css`
           .text-shadow {
@@ -85,15 +33,28 @@ const Layout = ({ children, name }) => {
           .text-shadow-none {
             text-shadow: none;
           }
+          .fade-enter .page {
+            opacity: 0;
+            z-index: 1;
+          }
+
+          .fade-enter.fade-enter-active .page {
+            opacity: 1;
+            transition: opacity 450ms ease-in;
+          }
         `}
       />
     </>
   );
 };
 
+Layout.defaultProps = {
+  lang: 'en',
+};
+
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  name: PropTypes.string,
+  lang: PropTypes.string,
 };
 
 export default Layout;

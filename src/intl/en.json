@@ -1,6 +1,14 @@
 {
-  "home.seoTitle": "Sinadinakis Winery",
+  "home.seoTitle": "Cretan Winery | Organic Wines Sinadinakis",
   "home.seoDescription": "Cretan winery Sinadinakis is located in the heart of Archanes. A family company with passion for the wine making. All the wines are produced with biologic methods, with care for the environment and are certified by 'BIO Hellas'.",
+  "story.seoTitle": "Cretan Winery Information | Archanes Crete",
+  "story.seoDescription": "Four organic wines produced in our winery, from local and international varieties. All the wines are produced with biologic methods, with care for the environment and are certified by BIO Hellas. Check the list with all our wines and their awards.",
+  "wines.seoTitle": "Organic Wines Sinadinakis | Archanes Crete",
+  "wines.seoDescription":  "Four organic wines produced in our winery, from local and international varieties. All the wines are produced with biologic methods, with care for the environment and are certified by BIO Hellas. Check the list with all our wines and their awards.",
+  "contact.seoTitle": "Contact Sinadinakis Winery | Archanes Crete",
+  "contact.seoDescription": "Contact us to share our passion for wine. In 1991 we planned our first vineyard. We are family winery with passion for the winemaking. Contact us to taste our wines and arrange a visit.",
+  "not.found.seoTitle": "Not found page in Sinadinakis Winery",
+  
   "home.title": "Discover ",
   "home.subtitle": "Organic, family winery in Archanes, Crete",
   "home.header": "Winegrowing in Archanes {breakpoint} since 1991",
@@ -8,20 +16,21 @@
   "home.winery": "Sinadinakis Winery",
   "home.wine": "Organic Wines",
   "home.aboutUs": "Our winery",
+
+  "menu.home": "Home",
   "menu.story": "Winery",
   "menu.wines": "Wines",
   "menu.contact": "Contact",
   "menu.language.english": "English",
   "menu.language.greek": "Greek",
-  "story.seoTitle": "Cretan Winery Information | Archanes Crete",
-  "story.seoDescription": "Four organic wines produced in our winery, from local and international varieties. All the wines are produced with biologic methods, with care for the environment and are certified by BIO Hellas. Check the list with all our wines and their awards.",
+
   "story.header.section.title": "Our family and this place is everything to us.",
   "story.header.section.content": "Sinadinakis winery located in Archanes (Greek(Gr): Αρχάνες), a traditional settlement located in the heart of a major wine-making area of Heraklion, Crete. Archaeological evidence found in the area proving evidence of the uniqueness of Archanes location and climate as one of the most important wine-growing regions since the Minoan era.",
   "story.first.paragraph.content": "In 1991 we planned our first vineyard. We are family winery with passion for the winemaking. Our organic wines produced and bottled from the enologist Evangelos Sinadinakisom (Greek: Ευάγγελος Συναδινάκης) and his family members. We cultivate in the family vineyard several local varieties, combined with the international varieties.",
   "story.second.paragraph.content": "The secret of cretan wines Sinadinakis is its magnificent geolocation: our vineyards are located on sunny slopes, at the foot of the sacred mountain Giouchtas. Kotsifali (a variety that can be found only in the area of Arhanes and Peza), and the Aegean varieties Assyrtiko and Vidiano, combined with international varieties such as Cabernet Sauvignon, Merlot, Chardonnay, Sauvignon blanc. Sinadinakis vineyards are located in the zone of Archanes and Peza. The vineyards are cultivated only with organic farming methods. The crop is mild, yields of 2 to 2.5 kg / vine (600-700 kg / acre). The harvest is done manually in the morning hours, by the family members and our friends.",
   "story.third.paragraph.content": "An organic wine is a wine made from grapes that were grown using organic methods, without the use of artificial or synthetic ingredients, chemicals and fertilizers (such as herbicides, pesticides, GMOs, etc.), to maintain the natural microclimate of the soil. To control weeds and pests, we work with nature, not against it, by improving the biodiversity of their vineyard. Thus, the vineyard becomes a self-regulating, natural ecosystem, which is able to deal with internal problems and eliminates the need for artificial and potentially toxic chemicals.",
   "stroy.winery": "Sinadinakis Winery",
-  "wines.seoTitle": "Organic Wines Sinadinakis | Archanes Crete",
+  
   "wines.header": "Sinadinakis Wines",
   "wines.content": "Four unique organic wines produced in our winery. All the wines are produced with biologic methods, with care for the environment and are certified by 'BIO Hellas'.",
   "wines.kostifali.wine.title": "Kotsifali & Cabernet Sauvignon",
@@ -37,15 +46,17 @@
   "wines.wine.info.aged": "Aged for 12 months in oak barrels",
   "wines.wine.info.vinification": "Classical vinification, at controled temperature with sufficient extraction",
   "wines.wine.info.controlled": "Mild fermented grape controlled in low temperature.",
-  "contact.seoTitle": "Contact Sinadinakis Winery | Archanes Crete",
-  "contact.seoDescription": "Contact us to share our passion for wine. In 1991 we planned our first vineyard. We are family winery with passion for the winemaking. Contact us to taste our wines and arrange a visit.",
-  "contact.header": "Share our passion for wine",
+  
+   "contact.header": "Share our passion for wine",
   "contact.message": "In 1991 we planned our first vineyard. We are family winery with passion for the winemaking. Contact us to taste our wines and arrange a visit.",
   "contact.form.input.name": "Full name",
   "contact.form.input.email": "E-mail",
   "contact.form.input.message": "Message",
   "contact.form.submit": "Submit",
-  "not.found.seoTitle": "Not found page in Sinadinakis Winery",
+  
+  
   "not.found.header": "PAGE NOT FOUND IN OUR WINERY",
-  "not.found.content": "You just hit a route that doesn&#39;t exist... the sadness."
+  "not.found.content": "You just hit a route that doesn&#39;t exist... the sadness.",
+  "footer.google.maps": "Google Maps Location",
+  "footer.contact.information": "Contact Information"
 }

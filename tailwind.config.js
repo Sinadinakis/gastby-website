@@ -10,10 +10,8 @@ module.exports = {
     fontFamily: {
       'pt-sans': 'La Belle Aurore, PT Sans, sans-serif',
       'open-sans': 'Open Sans, sans-serif',
-      indie: 'Indie Flower, serif',
       nunito: 'Nunito Sans, sans-serif',
-      dancing: 'Dancing Script, sans-serif',
-      allan: 'Allan, sans-serif',
+      garamond: 'EB Garamond, Nunito Sans, san-serif'
     },
     inset: {
       '0': 0,

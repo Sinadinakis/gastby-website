@@ -151,6 +151,27 @@ const Image = ({ name, className, wrapperClassName, alt, style }) => {
           }
         }
       }
+      winesTop: file(relativePath: { eq: "wines-top.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      storyTop: file(relativePath: { eq: "story-top.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      contactTop: file(relativePath: { eq: "contact-top.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `);
 

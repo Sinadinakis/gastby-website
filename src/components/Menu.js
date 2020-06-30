@@ -1,5 +1,5 @@
 import React from 'react';
-import { useIntl, Link } from 'gatsby-plugin-intl';
+import { useIntl, Link, navigate } from 'gatsby-plugin-intl';
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
 
@@ -14,9 +14,15 @@ const Menu = () => {
   const { formatMessage } = useIntl();
 
   return (
-    <div className="z-10 menu pl-2 md:pl-0 md:ml-0">
+    <nav className="z-10 menu pl-2 md:pl-0 md:ml-0">
       <div className="container relative mx-auto max-w-6xl pr-5 flex justify-between items-center">
-        <Link to={'/'} className="text-xl left-0" style={{ outline: 'none' }}>
+        <button
+          // eslint-disable-next-line
+          onClick={() => navigate('/')}
+          className="text-xl left-0"
+          style={{ outline: 'none' }}
+          aria-label="Sinadinakis home page link"
+        >
           <span
             className="fill-current bg-no-repeat inline-block w-40 h-12 shadow-2xl"
             style={{
@@ -25,10 +31,10 @@ const Menu = () => {
               filter: 'drop-shadow( 2px 1px 2px rgba(0, 0, 0, 1))',
             }}
           />
-        </Link>
+        </button>
 
-        <ul className="hidden md:flex uppercase tracking-wider text-sm text-gray-300">
-          <li>
+        <ul className="hidden md:flex uppercase tracking-wider text-white">
+          <li className="mx-8">
             <Link
               to="/story"
               activeStyle={{ color: 'white', borderBottom: '1px solid white' }}
@@ -38,21 +44,21 @@ const Menu = () => {
               {formatMessage(menuMessages.menuStory)}
             </Link>
           </li>
-          <li className="ml-16">
+          <li className="mx-8">
             <Link
               to="/wines"
               activeStyle={{ color: 'white', borderBottom: '1px solid white' }}
-              className=" hover:text-yellow-400"
+              className="hover:text-yellow-400"
               partiallyActive={true}
             >
               {formatMessage(menuMessages.menuWines)}
             </Link>
           </li>
-          <li className="ml-16">
+          <li className="mx-8">
             <Link
               to="/contact"
               activeStyle={{ color: 'white', borderBottom: '1px solid white' }}
-              className=" hover:text-yellow-400"
+              className="hover:text-yellow-400"
               partiallyActive={true}
             >
               {formatMessage(menuMessages.menuContact)}
@@ -61,7 +67,7 @@ const Menu = () => {
         </ul>
         <Language />
       </div>
-    </div>
+    </nav>
   );
 };
 

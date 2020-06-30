@@ -1,8 +1,10 @@
+const { truncate } = require("lodash");
+
 module.exports = {
   siteMetadata: {
-    title: 'Cretan Organic Wines',
-    siteUrl: 'https://archaneswinery.com',
-    description: 'Website Winery Sinadinakis',
+    title: 'Archanes Wines',
+    siteUrl: 'http://archaneswinery.com',
+    description: 'Cretan Winery Sinadinakis',
     author: '@Sinadinakis',
   },
   plugins: [
@@ -16,14 +18,54 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-preact',
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.archaneswinery.com/en/',
+        sitemap: 'https://www.archaneswinery.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-htaccess',
+      options: {
+        RewriteBase: true,
+        https: false,
+        www: false,
+        SymLinksIfOwnerMatch: true,
+        host: 'archaneswinery.com', // if 'www' is set to 'false', be sure to also remove it here!
+        ErrorDocument: `
+          ErrorDocument 404 /404.html
+        `,
+        custom: `
+            # This is a custom rule!
+            # This is a another custom rule!
+        `,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: 'Open+Sans',
+          },
+          {
+            family: 'Nunito+Sans'
+          },
+          {
+            family: 'EB+Garamond',
+          }
+        ]
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
           `Indie+Flower`,
           `Open+Sans`,
           `Nunito+Sans`,
-          `Dancing+Script`,
-          `allan`,
+
         ],
         display: 'swap',
       },

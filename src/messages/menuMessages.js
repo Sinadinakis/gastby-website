@@ -1,4 +1,8 @@
 export default {
+  menuHome: {
+    id: 'menu.home',
+    defaultMessage: 'Home',
+  },
   menuStory: {
     id: 'menu.story',
     defaultMessage: 'Winery',
@@ -19,7 +23,12 @@ export default {
     id: 'menu.language.greek',
     defaultMessage: 'Greek',
   },
-  footerPhone: {
-    id: ''
-  }
+  footerGoogleMap: {
+    id: 'footer.google.maps',
+    defaultMessage: 'Google Maps Location',
+  },
+  footerContactInformation: {
+    id: 'footer.contact.information',
+    defaultMessage: 'Contact Information',
+  },
 };

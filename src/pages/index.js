@@ -1,19 +1,16 @@
 import React from 'react';
-import { Match } from "@reach/router"
-
+import { useMatch } from '@reach/router';
 // Components
 import Layout from '../components/layout';
-import Routers from "../components/Routers"
 import { StateProvider } from '../services/GlobalStore/GlobalStore';
+import Home from '../views/Home';
 
 const IndexPage = () => {
-
+  const match = useMatch('/:id');
   return (
     <StateProvider>
-      <Layout>
-        <Match path="/app/:name">
-          {({ match }) => <Routers name={match && match.name} />}
-        </Match>
+      <Layout lang={match && match.id}>
+        <Home lang={match && match.id} />
       </Layout>
     </StateProvider>
   );

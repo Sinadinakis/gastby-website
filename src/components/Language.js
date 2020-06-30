@@ -12,23 +12,27 @@ const Language = () => {
     el: formatMessage(menuMessages.menuLanguageGreek),
   };
 
+  // const updateLanguage = (language) => {
+  //   changeLocale(language)
+  // }
+
   return (
     <div>
       <IntlContextConsumer>
-        {({ languages, language: currentLocale }) =>
-          languages.map(language => (
+        {({ languages, language: currentLocale }) => {
+          return languages.map(language => (
             <a
               key={language}
               // eslint-disable-next-line
               onClick={() => changeLocale(language)}
-              className={`ml-4 cursor-pointer ${
-                currentLocale === language ? `text-yellow-500` : `text-white`
+              className={`mx-4 cursor-pointer ${
+                currentLocale === language ? `text-orange-300` : ` text-white`
               }  hover:text-yellow-600`}
             >
               {languageName[language]}
             </a>
-          ))
-        }
+          ));
+        }}
       </IntlContextConsumer>
     </div>
   );
