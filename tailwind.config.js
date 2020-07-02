@@ -17,7 +17,8 @@ module.exports = {
       '0': 0,
       auto: 'auto',
       '1/2': '50%',
-      40: '40%'
+      40: '40%',
+      100: '100%'
     },
     /*
      * Here is where you define your screen sizes, 'd' is for down

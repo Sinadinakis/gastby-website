@@ -172,6 +172,27 @@ const Image = ({ name, className, wrapperClassName, alt, style }) => {
           }
         }
       }
+      archanesStreetView: file(relativePath: { eq: "archanes-1.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      archanesCafenion: file(relativePath: { eq: "archanes-2.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      archanesPanorama: file(relativePath: { eq: "archanes-3.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `);
 

@@ -7,6 +7,10 @@ export default {
     id: 'menu.story',
     defaultMessage: 'Winery',
   },
+  menuLocation: {
+    id: 'menu.location',
+    defaultMessage: 'Location',
+  },
   menuWines: {
     id: 'menu.wines',
     defaultMessage: 'Wines',

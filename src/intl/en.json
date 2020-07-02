@@ -5,12 +5,14 @@
   "story.seoDescription": "Four organic wines produced in our winery, from local and international varieties. All the wines are produced with biologic methods, with care for the environment and are certified by BIO Hellas. Check the list with all our wines and their awards.",
   "wines.seoTitle": "Organic Wines Sinadinakis | Archanes Crete",
   "wines.seoDescription":  "Four organic wines produced in our winery, from local and international varieties. All the wines are produced with biologic methods, with care for the environment and are certified by BIO Hellas. Check the list with all our wines and their awards.",
+  "location.seoTitle": "Take the road to Archanes | Taste our organic cretan wines",
+  "location.seoDescription": "Information about Archanes and where to Eat, Taste Our wines in Archanes", 
   "contact.seoTitle": "Contact Sinadinakis Winery | Archanes Crete",
   "contact.seoDescription": "Contact us to share our passion for wine. In 1991 we planned our first vineyard. We are family winery with passion for the winemaking. Contact us to taste our wines and arrange a visit.",
   "not.found.seoTitle": "Not found page in Sinadinakis Winery",
   
   "home.title": "Discover ",
-  "home.subtitle": "Organic, family winery in Archanes, Crete",
+  "home.subtitle": "Organic winery in Archanes wine region",
   "home.header": "Winegrowing in Archanes {breakpoint} since 1991",
   "home.content": "The Sinadinakis winery is located in the heart of Archanes. A family company with passion for the winemaking. Our organic wines produced and bottled from the enologist Evangelos Sinadinakisomand his family members. The secret of cretan wines Sinadinakis is its magnificent geolocation: our vineyards are located on sunny slopes, at the foot of the sacred mountain Giouchtas (Gr.: Γιούχτας).",
   "home.winery": "Sinadinakis Winery",
@@ -46,14 +48,21 @@
   "wines.wine.info.aged": "Aged for 12 months in oak barrels",
   "wines.wine.info.vinification": "Classical vinification, at controled temperature with sufficient extraction",
   "wines.wine.info.controlled": "Mild fermented grape controlled in low temperature.",
-  
-   "contact.header": "Share our passion for wine",
-  "contact.message": "In 1991 we planned our first vineyard. We are family winery with passion for the winemaking. Contact us to taste our wines and arrange a visit.",
+
+  "location.header": "Take the road to Archanes, {breakpoint} Taste our organic wines",
+  "location.content": "The Archanes village is located 15 km, south-east of Heraklion, at the foot of the mountain Giouchtas and 9 km south of the archaeological site of Knossos Palace. The landmarks of Arhanes - is hills and valleys, fertile valleys and rich flora. Archanes resembles a small neo-classical town surrounded by olive groves and endless vineyards. Cretans first produced wine during the Minoan period. In Vathypetro (4 km. south of Archanes), has been discovered a wine press dating back to 1550-1450 BC. It is considered as the oldest in the Mediterranean Sea and one of the oldest in Europe.",
+  "location.taste.section.header": "Where to Eat, Taste Our wines in Archanes",
+  "location.taste.subsection.header": "Bakaliko",
+  "location.taste.subsection.content": "Bakaliko is a deli (grocery and eatery), in the central square of Archanes village. Chefs Agnes and Susanna - 2 pioneering Hungarian women who had come to Crete over the years, fell in love… with the island and decided to stay. They created a unique blend of local ingredients and international cuisine flavours. Bakaliko offers light sit-down menus (mezedes in greek), a tasting of a variety of wines from the region, as well as local cretan products to take home. You can follow wine tasting, consisting of 5 selected wines chosen to match a wide assortment of artisanal cheese, as well as some traditional Cretan charcuterie.",
+  "location.taste.subsection.header2": "Spitiko",
+  "location.taste.subsection.content2": "In the square Mrs. Georgianna cooks and serves next to the fireplace great local food. Excellent “dolmades”, braised goat, pork in the oven and cheese-pie that you should not miss. We should mention that all the ingredients come from the local market of the village. There you can taste bulk sinadinakis wines.",
+
+  "contact.header": "Share our passion for wine",
+  "contact.message": "In 1991 we planned our first vineyard. We are family winery with passion for the winemaking. Our wines are unique at character and because the quantity is limited they are very exclussive.",
   "contact.form.input.name": "Full name",
   "contact.form.input.email": "E-mail",
   "contact.form.input.message": "Message",
-  "contact.form.submit": "Submit",
-  
+  "contact.form.input.submit": "Submit",
   
   "not.found.header": "PAGE NOT FOUND IN OUR WINERY",
   "not.found.content": "You just hit a route that doesn&#39;t exist... the sadness.",

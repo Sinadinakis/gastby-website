@@ -50,24 +50,11 @@ const Contact = () => {
             {formatMessage({ id: 'contact.header' })}
           </h1>
         </div>
-        <div className="mx-auto mb-8 px-2 md:px-0">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5600.801577445772!2d25.156684077848688!3d35.23395687693614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149af63b97efa8e1%3A0xf628661a6f71bcdd!2sSinadinakis%20Winery!5e0!3m2!1sen!2snl!4v1591622729922!5m2!1sen!2snl"
-            width="100%"
-            height="350"
-            frameBorder="0"
-            style={{ border: '0' }}
-            allowFullScreen=""
-            aria-hidden="false"
-            tabIndex="0"
-            title="Google map location sinadinakis winery"
-          ></iframe>
-        </div>
 
-        <div className="max-w-5xl mx-auto mb-8 px-2md:px-20 leading-relaxed">
+        <div className="max-w-5xl mx-auto mb-8 px-2 md:px-20 leading-relaxed">
           <p className="italic">{formatMessage({ id: 'contact.message' })}</p>
         </div>
-        <div className="max-w-5xl mx-auto flex flex-wrap items-start">
+        <div className="max-w-5xl mx-auto px-2 md:px-12 flex flex-wrap items-start">
           <div className="w-full  md:w-1/2 p-2">
             <form
               // eslint-disable-next-line
@@ -78,7 +65,7 @@ const Contact = () => {
               name="contatcForm"
               action="https://formspree.io/mdowgqla"
             >
-              <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="flex flex-wrap mb-6">
                 <div className="w-full px-3">
                   <label
                     className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -97,7 +84,7 @@ const Contact = () => {
                   <p className="text-gray-600 text-xs italic validate"></p>
                 </div>
               </div>
-              <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="flex flex-wrap mb-6">
                 <div className="w-full px-3">
                   <label
                     className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -116,7 +103,7 @@ const Contact = () => {
                   <p className="text-gray-600 text-xs italic validate"></p>
                 </div>
               </div>
-              <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="flex flex-wrap mb-6">
                 <div className="w-full px-3">
                   <label
                     className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -155,6 +142,19 @@ const Contact = () => {
           </div>
         </div>
       </main>
+      <div className="mx-auto">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5600.801577445772!2d25.156684077848688!3d35.23395687693614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149af63b97efa8e1%3A0xf628661a6f71bcdd!2sSinadinakis%20Winery!5e0!3m2!1sen!2snl!4v1591622729922!5m2!1sen!2snl"
+          width="100%"
+          height="350"
+          frameBorder="0"
+          style={{ border: '0' }}
+          allowFullScreen=""
+          aria-hidden="false"
+          tabIndex="0"
+          title="Google map location sinadinakis winery"
+        ></iframe>
+      </div>
       <Footer />
     </>
   );

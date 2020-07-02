@@ -25,7 +25,7 @@ const Home = ({ lang }) => {
       <Menu />
       <BackgroundSection>
         <header className={'container mx-auto'}>
-          <div className="absolute top-0 h-full flex items-center mt-8 px-2 md:px-12">
+          <div className="absolute top-0 h-full flex items-center mt-8 px-2 md:px-16">
             <div className="shadow-2xl">
               <h1
                 className={`text-2xl text-shadow leading-tight ${clsx({

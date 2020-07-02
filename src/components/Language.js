@@ -17,7 +17,7 @@ const Language = () => {
   // }
 
   return (
-    <div>
+    <div className="my-4 mx-4 md:mx-0 md:my-0">
       <IntlContextConsumer>
         {({ languages, language: currentLocale }) => {
           return languages.map(language => (
