@@ -13,6 +13,12 @@ module.exports = {
       nunito: 'Nunito Sans, sans-serif',
       garamond: 'EB Garamond, Nunito Sans, san-serif'
     },
+    filter: { 
+      'none': 'none',
+      'grayscale': 'grayscale(100%)',
+      'invert': 'invert(1)',
+      'sepia': 'sepia(1)',
+    },
     inset: {
       '0': 0,
       auto: 'auto',
@@ -83,5 +89,10 @@ module.exports = {
     './src/**/*.js',
     './src/**/*.jsx',
   ],
-  plugins: [],
+  variants: {
+    filter: ['responsive', 'hover'], // defaults to ['responsive']
+  },
+  plugins: [
+    require('tailwindcss-filters'),
+  ],
 };

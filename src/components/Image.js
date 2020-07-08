@@ -193,6 +193,34 @@ const Image = ({ name, className, wrapperClassName, alt, style }) => {
           }
         }
       }
+      grapes: file(relativePath: { eq: "grapes.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      farming: file(relativePath: { eq: "farming.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      harvest: file(relativePath: { eq: "harvest.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      organic: file(relativePath: { eq: "organic.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `);
 
@@ -208,6 +236,7 @@ const Image = ({ name, className, wrapperClassName, alt, style }) => {
 
 Image.defaultProps = {
   className: 'block w-full h-auto mb-8',
+  style: { contrast: '0.9', saturate: '1.2' },
 };
 
 Image.propTypes = {

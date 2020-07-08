@@ -20,12 +20,12 @@ const Menu = () => {
 
   return (
     <div className="z-10 menu flex items-center justify-between flex-wrap">
-      <div className="w-full md:w-auto md:mx-auto md:max-w-6xl pr-5 flex justify-between items-center">
-        <div className="flex items-center flex-shrink-0 text-white pr-2 md:px-0">
+      <div className="w-full md:w-auto md:mx-auto md:max-w-6xl flex justify-between items-center">
+        <div className="flex text-white pr-2 md:px-0">
           <button
             // eslint-disable-next-line
             onClick={() => navigate('/')}
-            className="text-xl left-0"
+            className="text-xl left-0 flex items-center flex-shrink-0"
             style={{ outline: 'none' }}
             aria-label="Sinadinakis home page link"
           >
@@ -55,13 +55,13 @@ const Menu = () => {
             </svg>
           </button>
         </div>
-        <nav className="absolute mad: bg-gray-800 md:bg-transparent md:relative w-full md:w-screen md:max-w-6xl top-100 md:top-auto md:mx-auto flex items-center justify-between flex-wrap">
+        <nav className="absolute bg-gray-800 md:bg-transparent md:relative w-full md:w-screen md:max-w-6xl top-100 md:top-auto md:mx-auto flex items-center justify-between flex-wrap">
           <div
             className={`${
               isExpanded ? `block` : `hidden`
             } mt-2 bg-bottomw-full block flex-grow lg:flex items-center lg:w-auto`}
           >
-            <ul className="md:flex uppercase tracking-wider text-white mx-0 lg:mx-24">
+            <ul className="md:w-auto md:mx-auto md:max-w-6xl md:flex uppercase tracking-wider text-white mx-0">
               <li className="mx-8 my-2 md:my-0">
                 <Link
                   to="/story"

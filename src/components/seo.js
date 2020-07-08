@@ -30,7 +30,7 @@ function SEO({ description, meta, title }) {
   return (
     <Helmet
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s`}
       meta={[
         {
           name: 'description',

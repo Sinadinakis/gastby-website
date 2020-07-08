@@ -64,7 +64,8 @@
     "styled-components": "^5.0.0",
     "stylelint": "^13.0.0",
     "tailwind.macro": "^1.0.0-alpha.10",
-    "tailwindcss": "^1.1.4"
+    "tailwindcss": "^1.1.4",
+    "tailwindcss-filters": "^3.0.0"
   },
   "devDependencies": {
     "babel-jest": "^25.1.0",

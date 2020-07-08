@@ -2,7 +2,7 @@ const { truncate } = require("lodash");
 
 module.exports = {
   siteMetadata: {
-    title: 'Archanes Wines',
+    title: 'Organic Cretan Wines',
     siteUrl: 'http://archaneswinery.com',
     description: 'Cretan Winery Sinadinakis',
     author: '@Sinadinakis',
