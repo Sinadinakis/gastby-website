@@ -112,7 +112,7 @@ const Home = ({ lang }) => {
                 <div className="text-gray-900 p-3 w-20 h-20 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <Image
                     name="harvest"
-                    alt="Winery story page"
+                    alt="Harvest in the vineyards"
                     className="w-24  bg-white"
                   />
                 </div>
@@ -127,7 +127,7 @@ const Home = ({ lang }) => {
                 <div className="text-gray-900 p-3 w-20 h-20 rounded-full bg-white inline-flex items-center justify-center">
                   <Image
                     name="grapes"
-                    alt="Winery story page"
+                    alt="Worker in the vineyards"
                     className="w-8 bg-white"
                   />
                 </div>

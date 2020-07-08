@@ -17,6 +17,8 @@ module.exports = {
       'none': 'none',
       'grayscale': 'grayscale(100%)',
       'invert': 'invert(1)',
+      'contrast': 'contrast(0.9)',
+      'saturate': 'saturate(1.2)',
       'sepia': 'sepia(1)',
     },
     inset: {

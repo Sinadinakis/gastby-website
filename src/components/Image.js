@@ -28,7 +28,7 @@ const Image = ({ name, className, wrapperClassName, alt, style }) => {
     query {
       producer: file(relativePath: { eq: "producer.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -235,8 +235,7 @@ const Image = ({ name, className, wrapperClassName, alt, style }) => {
 };
 
 Image.defaultProps = {
-  className: 'block w-full h-auto mb-8',
-  style: { contrast: '0.9', saturate: '1.2' },
+  className: 'block w-full h-auto mb-8 filter-contrast filter-saturate',
 };
 
 Image.propTypes = {
