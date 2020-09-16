@@ -12,10 +12,6 @@ const Language = () => {
     el: formatMessage(menuMessages.menuLanguageGreek),
   };
 
-  // const updateLanguage = (language) => {
-  //   changeLocale(language)
-  // }
-
   return (
     <div className="my-4 mx-4 md:mx-0 md:my-0">
       <IntlContextConsumer>

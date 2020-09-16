@@ -11,9 +11,10 @@ module.exports = {
       'pt-sans': 'La Belle Aurore, PT Sans, sans-serif',
       'open-sans': 'Open Sans, sans-serif',
       nunito: 'Nunito Sans, sans-serif',
+      rancho: 'Rancho, cursive',
       garamond: 'EB Garamond, Nunito Sans, san-serif'
     },
-    filter: { 
+    filter: {
       'none': 'none',
       'grayscale': 'grayscale(100%)',
       'invert': 'invert(1)',
@@ -27,6 +28,21 @@ module.exports = {
       '1/2': '50%',
       40: '40%',
       100: '100%'
+    },
+    fontSize: {
+      'xs': '.75rem',
+      'sm': '.875rem',
+      'tiny': '.875rem',
+      'base': '1rem',
+      'lg': '1.125rem',
+      'xl': '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '4.5xl': '2.7rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+      '7xl': '5rem',
     },
     /*
      * Here is where you define your screen sizes, 'd' is for down

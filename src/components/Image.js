@@ -76,7 +76,7 @@ const Image = ({ name, className, wrapperClassName, alt, style }) => {
       }
       slide1: file(relativePath: { eq: "slide-1.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 800, maxHeight: 500) {
+          fluid(maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }

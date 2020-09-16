@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.archaneswinery.com/en/',
-        sitemap: 'https://www.archaneswinery.com/sitemap.xml',
+        host: 'http://www.archaneswinery.com/en/',
+        sitemap: 'http://www.archaneswinery.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
@@ -54,7 +54,10 @@ module.exports = {
           },
           {
             family: 'EB+Garamond',
-          }
+          },
+          {
+            family: 'Rancho',
+          },
         ]
       }
     },
