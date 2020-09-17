@@ -1,6 +1,7 @@
 # Gastby-website
 
-This is a website build in gatsby and tailwindCss
+This is a website build in gatsby and tailwindCss.
+Node version for gatbsy minimum 10.13.
 
 ## 🚀 Quick start
 
