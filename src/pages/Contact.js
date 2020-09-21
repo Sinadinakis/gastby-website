@@ -5,8 +5,6 @@ import pageWrapper from '../hoc/pageWrapper';
 
 // Components
 import Seo from '../components/seo';
-import Menu from '../components/layout/Menu';
-import Footer from '../components/layout/Footer';
 import Image from '../components/Image';
 
 const Contact = () => {
@@ -38,7 +36,6 @@ const Contact = () => {
         title={formatMessage({ id: 'contact.seoTitle' })}
         description={formatMessage({ id: 'contact.seoDescription' })}
       />
-      <Menu />
       <div className="w-full bg-yellow-400">
         <Image
           name="contactTop"
@@ -157,7 +154,6 @@ const Contact = () => {
           title="Google map location sinadinakis winery"
         ></iframe>
       </div>
-      <Footer />
     </>
   );
 };

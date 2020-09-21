@@ -8,9 +8,7 @@ import pageWrapper from '../hoc/pageWrapper';
 import homeMessages from '../messages/homeMessages';
 
 // Components
-import Menu from '../components/layout/Menu';
 import Hero from '../components/layout/Hero';
-import Footer from '../components/layout/Footer';
 import Image from '../components/Image';
 import Seo from '../components/seo';
 
@@ -23,7 +21,6 @@ const Home = ({ lang }) => {
         title={formatMessage(homeMessages.seoTitle)}
         description={formatMessage(homeMessages.seoDescription)}
       />
-      <Menu />
       <Hero lang={lang} />
 
       <main style={{ backgroundColor: '#f0efd1', color: '#191919' }}>
@@ -45,7 +42,7 @@ const Home = ({ lang }) => {
               <div className="w-full md:w-1/2 p-4 mb-12">
                 <Link
                   to="/story"
-                  className="block text-2xl text-red-500 font-semibold text-center mb-4  filter-grayscale hover:filter-none cursor-pointer"
+                  className="block text-2xl font-garamond font-semibold text-center mb-4 hover:filter-grayscale filter-none cursor-pointer"
                 >
                   {formatMessage({ id: 'home.aboutUs' })}
                   <Image name="producer" alt="Winery story page" />
@@ -55,7 +52,7 @@ const Home = ({ lang }) => {
               <div className="w-full md:w-1/2 p-4 mb-12">
                 <Link
                   to="/wines"
-                  className="block text-2xl text-red-500 font-semibold text-center mb-4 filter-grayscale hover:filter-none cursor-pointer"
+                  className="block text-2xl font-garamond font-semibold text-center mb-4 hover:filter-grayscale  filter-none cursor-pointer"
                 >
                   {formatMessage({ id: 'home.wine' })}
                   <Image
@@ -135,7 +132,6 @@ const Home = ({ lang }) => {
           </article>
         </section>
       </main>
-      <Footer />
     </>
   );
 };

@@ -8,8 +8,6 @@ import winesMessages from '../messages/winesMessages';
 import pageWrapper from '../hoc/pageWrapper';
 
 // Components
-import Menu from '../components/layout/Menu';
-import Footer from '../components/layout/Footer';
 import Image from '../components/Image';
 import Icon from '../components/Icon';
 
@@ -40,7 +38,6 @@ const Wines = () => {
         title={formatMessage(winesMessages.seoTitle)}
         description={formatMessage(winesMessages.seoDescription)}
       />
-      <Menu />
       <div className="w-full bg-yellow-400">
         <Image
           name="winesTop"
@@ -220,7 +217,6 @@ const Wines = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 };

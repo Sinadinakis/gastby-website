@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { Global, css } from '@emotion/core';
 
+// Components
+import Menu from '../components/layout/Menu';
+import Footer from '../components/layout/Footer';
+
 const Layout = ({ lang, children }) => {
   return (
     <>
@@ -13,7 +17,11 @@ const Layout = ({ lang, children }) => {
       >
         <meta charSet="utf-8" />
       </Helmet>
-      <div className={'mx-0'}>{children}</div>
+      <div className={'mx-0'}>
+        <Menu />
+        {children}
+        <Footer />
+      </div>
       <Global
         styles={css`
           .text-shadow {

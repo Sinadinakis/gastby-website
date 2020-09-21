@@ -8,8 +8,6 @@ import pageWrapper from '../hoc/pageWrapper';
 
 // Components
 import Seo from '../components/seo';
-import Menu from '../components/layout/Menu';
-import Footer from '../components/layout/Footer';
 import Image from '../components/Image';
 
 const Story = () => {
@@ -20,7 +18,6 @@ const Story = () => {
         title={formatMessage(storyMessages.seoTitle)}
         description={formatMessage(storyMessages.seoDescription)}
       />
-      <Menu />
       <div className="w-full bg-yellow-400">
         <Image
           name="storyTop"
@@ -94,8 +91,6 @@ const Story = () => {
           </div>
         </main>
       </main>
-
-      <Footer />
     </>
   );
 };

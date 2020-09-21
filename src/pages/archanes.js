@@ -3,8 +3,6 @@ import { useIntl } from 'gatsby-plugin-intl';
 
 // Components
 import Seo from '../components/seo';
-import Menu from '../components/layout/Menu';
-import Footer from '../components/layout/Footer';
 import Image from '../components/Image';
 import pageWrapper from '../hoc/pageWrapper';
 
@@ -17,8 +15,6 @@ const Location = () => {
         title={formatMessage({ id: 'location.seoTitle' })}
         description={formatMessage({ id: 'location.seoDescription' })}
       />
-      <Menu />
-
       <div className="w-full bg-yellow-400">
         <Image
           name="archanesPanorama"
@@ -39,22 +35,7 @@ const Location = () => {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto flex flex-wrap items-start">
-          <div className="w-full  md:w-1/2 p-2">
-            <Image name="archanesCafenion" alt="Yuchtas mountain in Archanes" />
-          </div>
-          <div className="w-full md:w-1/2 p-2">
-            <Image
-              name="archanesStreetView"
-              alt="Archanes street view of the village"
-            />
-          </div>
-        </div>
-
         <div className="max-w-6xl mx-auto mb-8 px-2 md:px-20 leading-relaxed">
-          <h2 className="text-gray-800 text-2xl mb-3">
-            {formatMessage({ id: 'location.taste.section.header' })}
-          </h2>
           <h3 className="font-bold">
             {formatMessage({ id: 'location.taste.subsection.header' })}
           </h3>
@@ -100,9 +81,19 @@ const Location = () => {
           </h3>
           <p>{formatMessage({ id: 'location.taste.subsection.content4' })}</p>
         </div>
-      </main>
 
-      <Footer />
+        <div className="max-w-5xl mx-auto flex flex-wrap items-start">
+          <div className="w-full  md:w-1/2 p-2">
+            <Image name="archanesCafenion" alt="Yuchtas mountain in Archanes" />
+          </div>
+          <div className="w-full md:w-1/2 p-2">
+            <Image
+              name="archanesStreetView"
+              alt="Archanes street view of the village"
+            />
+          </div>
+        </div>
+      </main>
     </>
   );
 };

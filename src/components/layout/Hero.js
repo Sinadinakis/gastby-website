@@ -21,16 +21,13 @@ const Hero = ({ lang }) => {
           <h1
             className={`text-4xl p-10 text-shadow leading-tight ${clsx({
               'font-garamond md:text-4.5xl tracking-wide': lang === 'el',
-              'font-rancho md:text-5xl tracking-wider': lang === 'en',
+              'font-nunito md:text-4xl tracking-wider': lang === 'en',
             })}`}
           >
             {formatMessage({ id: 'home.title' })}
             <Link
               to={'/story'}
-              className={`text-yellow-100 font-nunito ${clsx({
-                'text-4.5xl': lang === 'el',
-                'text-4xl': lang === 'en',
-              })} hover:text-yellow-300 cursor-pointer inline`}
+              className={`text-yellow-100 font-garamond tracking-wider text-5xl leading-3 hover:text-yellow-300 cursor-pointer inline`}
             >
               {formatMessage({ id: 'home.winery' })}
             </Link>
