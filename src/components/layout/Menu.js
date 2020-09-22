@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { useIntl, Link, navigate } from 'gatsby-plugin-intl';
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
@@ -10,7 +11,7 @@ import menuMessages from '../../messages/menuMessages';
 import logo from '../../assets/icons/logo.png';
 import Language from '../Language';
 
-const Menu = () => {
+const Menu = ({ className }) => {
   const { formatMessage } = useIntl();
   const [isExpanded, toggleExpansion] = useState(false);
 
@@ -19,29 +20,27 @@ const Menu = () => {
   }
 
   return (
-    <div className="z-10 menu flex flex-wrap">
-      <div className="w-full md:w-auto md:mx-auto md:max-w-6xl">
-        <nav className="lg:relative lg:bg-transparent flex flex-col lg:flex-row">
-          <div className="py-2 lg:w-auto flex flex-row lg:flex-none justify-between">
+    <div className={`menu ${className}`}>
+      <nav className="w-full md:w-auto md:mx-auto md:max-w-6xl">
+        <div className="lg:relative lg:bg-transparent flex flex-col lg:flex-row">
+          <div className="py-2 flex flex-row lg:flex-none justify-between text-white pr-2">
             {/* Logo button */}
-            <div className="flex text-white pr-2">
-              <button
-                // eslint-disable-next-line
-                onClick={() => navigate('/')}
-                className="text-xl left-0 flex items-center flex-sh rink-0 ml-6"
-                style={{ outline: 'none' }}
-                aria-label="Sinadinakis home page link"
-              >
-                <span
-                  className="fill-current bg-no-repeat inline-block w-40 h-12 shadow-2xl"
-                  style={{
-                    backgroundImage: `url(${logo})`,
-                    backgroundSize: 'contain',
-                    filter: 'drop-shadow( 2px 1px 2px rgba(0, 0, 0, 1))',
-                  }}
-                />
-              </button>
-            </div>
+            <button
+              // eslint-disable-next-line
+              onClick={() => navigate('/')}
+              className="text-xl left-0 flex items-center flex-sh rink-0 ml-6"
+              style={{ outline: 'none' }}
+              aria-label="Sinadinakis home page link"
+            >
+              <span
+                className="fill-current bg-no-repeat inline-block w-40 h-12 shadow-2xl"
+                style={{
+                  backgroundImage: `url(${logo})`,
+                  backgroundSize: 'contain',
+                  filter: 'drop-shadow( 2px 1px 2px rgba(0, 0, 0, 1))',
+                }}
+              />
+            </button>
 
             {/* Toggle mobile button */}
             <button
@@ -62,7 +61,7 @@ const Menu = () => {
           {/* Menu */}
           <div
             className={`${isExpanded ? `block` : `hidden`} 
-              py-4 w-full block flex-grow flex-row justify-center lg:flex lg:w-auto items-center bg-gray-800 lg:bg-transparent border-opacity-25`}
+              py-4 w-full flex-row lg:flex items-center bg-gray-800 lg:bg-transparent`}
           >
             <ul className="lg:flex uppercase text-white mx-4">
               <li className="mx-8 my-2 md:my-0">
@@ -120,12 +119,16 @@ const Menu = () => {
             </ul>
             <Language />
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   );
 };
 
+Menu.propTypes = {
+  className: PropTypes.string,
+};
+
 export default styled(Menu)`
-  ${tw`flex items-center justify-between flex-wrap bg-teal-500 p-6`}
+  ${tw`z-10 flex flex-wrap`}
 `;

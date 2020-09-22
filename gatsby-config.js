@@ -1,4 +1,4 @@
-const { truncate } = require("lodash");
+const { truncate } = require('lodash');
 
 module.exports = {
   siteMetadata: {
@@ -22,8 +22,8 @@ module.exports = {
       options: {
         host: 'http://www.archaneswinery.com/en/',
         sitemap: 'http://www.archaneswinery.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
     },
     {
       resolve: 'gatsby-plugin-htaccess',
@@ -50,7 +50,7 @@ module.exports = {
             family: 'Open+Sans',
           },
           {
-            family: 'Nunito+Sans'
+            family: 'Nunito+Sans',
           },
           {
             family: 'EB+Garamond',
@@ -58,18 +58,13 @@ module.exports = {
           {
             family: 'Rancho',
           },
-        ]
-      }
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Indie+Flower`,
-          `Open+Sans`,
-          `Nunito+Sans`,
-
-        ],
+        fonts: [`Indie+Flower`, `Open+Sans`, `Nunito+Sans`],
         display: 'swap',
       },
     },

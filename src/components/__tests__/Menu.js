@@ -1,7 +1,7 @@
 /* global expect */
 import React from 'react';
 
-import Menu from '../Menu';
+import Menu from '../layout/Menu';
 import { shallowWithIntl } from '../../helpers/intl-enzyme-test-helpers';
 
 describe('Menu', () => {

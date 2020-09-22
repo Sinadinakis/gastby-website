@@ -5,7 +5,8 @@ export default {
   },
   seoDescription: {
     id: 'story.seoDescription',
-    defaultMessage: 'In 1991 we planned our first vineyard. We are family winery with passion for the winemaking. Our organic wines produced and bottled from the enologist Evangelos Sinadinakisom (Greek: Ευάγγελος Συναδινάκης) and his family members. We cultivate in the family vineyard several local varieties, combined with the international varieties.' 
+    defaultMessage:
+      'In 1991 we planned our first vineyard. We are family winery with passion for the winemaking. Our organic wines produced and bottled from the enologist Evangelos Sinadinakisom (Greek: Ευάγγελος Συναδινάκης) and his family members. We cultivate in the family vineyard several local varieties, combined with the international varieties.',
   },
   winery: {
     id: 'stroy.winery',

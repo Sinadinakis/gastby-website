@@ -8,7 +8,7 @@ import pageWrapper from '../hoc/pageWrapper';
 
 // Components
 import Seo from '../components/seo';
-import Image from '../components/Image';
+import Image from '../components/UI/Image';
 
 const Story = () => {
   const { formatMessage } = useIntl();

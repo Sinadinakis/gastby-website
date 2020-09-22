@@ -7,9 +7,9 @@ import winesMessages from '../messages/winesMessages';
 
 import pageWrapper from '../hoc/pageWrapper';
 
-// Components
-import Image from '../components/Image';
-import Icon from '../components/Icon';
+// UI
+import Image from '../components/UI/Image';
+import Icon from '../components/UI/Icon';
 
 // Icons
 import checkIcon from '../assets/icons/check-icon.svg';

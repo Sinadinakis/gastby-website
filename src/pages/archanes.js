@@ -3,7 +3,7 @@ import { useIntl } from 'gatsby-plugin-intl';
 
 // Components
 import Seo from '../components/seo';
-import Image from '../components/Image';
+import Image from '../components/UI/Image';
 import pageWrapper from '../hoc/pageWrapper';
 
 const Location = () => {
@@ -24,7 +24,7 @@ const Location = () => {
       </div>
       <main className="py-10 px-6 break-words">
         <div className="max-w-6xl mx-auto mb-4 px-2 md:px-20">
-          <h1 className="text-left text-2xl md:text-4xl max-w-3xl leading-tight text-gray-800 mb-10">
+          <h1 className="text-left text-2xl md:text-4xl leading-tight text-gray-800 mb-10">
             {formatMessage(
               { id: 'location.header' },
               { breakpoint: <br className="hidden md:block" /> }
@@ -97,5 +97,5 @@ const Location = () => {
     </>
   );
 };
-8;
+
 export default pageWrapper(Location);

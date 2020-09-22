@@ -5,7 +5,8 @@ export default {
   },
   seoDescription: {
     id: 'contact.seoDescription',
-    defaultMessage: 'Contact us to share our passion for wine. In 1991 we planned our first vineyard. We are family winery with passion for the winemaking. Contact us to taste our wines and arrange a visit.' 
+    defaultMessage:
+      'Contact us to share our passion for wine. In 1991 we planned our first vineyard. We are family winery with passion for the winemaking. Contact us to taste our wines and arrange a visit.',
   },
   header: {
     id: 'contact.header',

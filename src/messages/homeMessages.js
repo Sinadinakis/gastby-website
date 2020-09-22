@@ -5,7 +5,8 @@ export default {
   },
   seoDescription: {
     id: 'home.seoDescription',
-    defaultMessage: 'Sinadinakis family winery located in Archanes, Heraklion - Crete. Four unique organic wines produced in our winery. Share our passion for wine making. All the wines are produced with biologic methods, with care for the environment and are certified by BIO Hellas' 
+    defaultMessage:
+      'Sinadinakis family winery located in Archanes, Heraklion - Crete. Four unique organic wines produced in our winery. Share our passion for wine making. All the wines are produced with biologic methods, with care for the environment and are certified by BIO Hellas',
   },
   homeHeader: {
     id: 'home.header',

@@ -12,30 +12,30 @@ module.exports = {
       'open-sans': 'Open Sans, sans-serif',
       nunito: 'Nunito Sans, sans-serif',
       rancho: 'Rancho, cursive',
-      garamond: 'EB Garamond, Nunito Sans, san-serif'
+      garamond: 'EB Garamond, Nunito Sans, san-serif',
     },
     filter: {
-      'none': 'none',
-      'grayscale': 'grayscale(100%)',
-      'invert': 'invert(1)',
-      'contrast': 'contrast(0.9)',
-      'saturate': 'saturate(1.2)',
-      'sepia': 'sepia(1)',
+      none: 'none',
+      grayscale: 'grayscale(100%)',
+      invert: 'invert(1)',
+      contrast: 'contrast(0.9)',
+      saturate: 'saturate(1.2)',
+      sepia: 'sepia(1)',
     },
     inset: {
       '0': 0,
       auto: 'auto',
       '1/2': '50%',
       40: '40%',
-      100: '100%'
+      100: '100%',
     },
     fontSize: {
-      'xs': '.75rem',
-      'sm': '.875rem',
-      'tiny': '.875rem',
-      'base': '1rem',
-      'lg': '1.125rem',
-      'xl': '1.25rem',
+      xs: '.75rem',
+      sm: '.875rem',
+      tiny: '.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
       '2xl': '1.5rem',
       '3xl': '1.875rem',
       '4xl': '2.25rem',
@@ -103,14 +103,9 @@ module.exports = {
     // textStyle: false,
     // whitespace: false,
   },
-  purge: [
-    './src/**/*.js',
-    './src/**/*.jsx',
-  ],
+  purge: ['./src/**/*.js', './src/**/*.jsx'],
   variants: {
     filter: ['responsive', 'hover'], // defaults to ['responsive']
   },
-  plugins: [
-    require('tailwindcss-filters'),
-  ],
+  plugins: [require('tailwindcss-filters')],
 };

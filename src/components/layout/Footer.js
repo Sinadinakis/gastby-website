@@ -2,7 +2,7 @@ import React from 'react';
 import { useIntl, Link } from 'gatsby-plugin-intl';
 
 // Components
-import Icon from '../Icon';
+import Icon from '../UI/Icon';
 import facebookIcon from '../../assets/icons/facebook.svg';
 import twitterIcon from '../../assets/icons/twitter.svg';
 import instagramIcon from '../../assets/icons/instagram.svg';

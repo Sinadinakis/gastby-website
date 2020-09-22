@@ -6,11 +6,11 @@
   "wines.seoTitle": "Organic Wines Sinadinakis | Winery Archanes, Crete",
   "wines.seoDescription": "Four unique organic wines produced in our winery, from local and international varieties. Check the list with all our wines and their awards.",
   "location.seoTitle": "Where to taste our organic wines | Winery Archanes, Crete",
-  "location.seoDescription": "Information about Archanes and where to Eat, Taste Our wines in Archanes", 
+  "location.seoDescription": "Information about Archanes and where to Eat, Taste Our wines in Archanes",
   "contact.seoTitle": "Contact with the Sinadinakis Winery | Organic Cretan Wines",
   "contact.seoDescription": "Contact us to share our passion for wine.  We are family winery with passion for the winemaking. Contact us to taste our wines and .",
   "not.found.seoTitle": "Not found page in Sinadinakis Winery | Organic Cretan Wines",
-  
+
   "home.title": "Discover ",
   "home.subtitle": "Organic wines from the Sinadinakis Family in Archanes",
   "home.header": "Winegrowing in {breakpoint} Archanes since 1991",
@@ -40,7 +40,7 @@
   "story.second.paragraph.content": "The secret of cretan wines Sinadinakis is its magnificent geolocation: our vineyards are located on sunny slopes, at the foot of the sacred mountain Giouchtas. Kotsifali (a variety that can be found only in the area of Arhanes and Peza), and the Aegean varieties Assyrtiko and Vidiano, combined with international varieties such as Cabernet Sauvignon, Merlot, Chardonnay, Sauvignon blanc. Sinadinakis vineyards are located in the zone of Archanes and Peza. The vineyards are cultivated only with organic farming methods. The crop is mild, yields of 2 to 2.5 kg / vine (600-700 kg / acre). The harvest is done manually in the morning hours, by the family members and our friends.",
   "story.third.paragraph.content": "An organic wine is a wine made from grapes that were grown using organic methods, without the use of artificial or synthetic ingredients, chemicals and fertilizers (such as herbicides, pesticides, GMOs, etc.), to maintain the natural microclimate of the soil. To control weeds and pests, we work with nature, not against it, by improving the biodiversity of their vineyard. Thus, the vineyard becomes a self-regulating, natural ecosystem, which is able to deal with internal problems and eliminates the need for artificial and potentially toxic chemicals.",
   "stroy.winery": "Sinadinakis Winery",
-  
+
   "wines.header": "Organic Wines",
   "wines.content": "Four unique wines produced in our winery. All the wines are produced with biologic methods, with care for the environment and are certified by 'BIO Hellas'.",
   "wines.kostifali.wine.title": "Kotsifali & Cabernet Sauvignon",
@@ -57,7 +57,7 @@
   "wines.wine.info.vinification": "Classical vinification, at controled temperature with sufficient extraction",
   "wines.wine.info.controlled": "Mild fermented grape controlled in low temperature.",
 
-  "location.header": " Taste our organic wines, {breakpoint} in the stores of Archanes that we work with",
+  "location.header": " Taste our organic wines, {breakpoint}in the stores of Archanes that we work with",
   "location.content": "The Archanes village is located 15 km, south-east of Heraklion, at the foot of the mountain Giouchtas and 9 km south of the archaeological site of Knossos Palace. Where to Eat, Taste Our wines in Archanes",
   "location.taste.subsection.header": "Bakaliko",
   "location.taste.subsection.content": "Bakaliko is a deli (grocery and eatery), in the central square of Archanes village. Chefs Agnes and Susanna - 2 pioneering Hungarian women who had come to Crete over the years, fell in love… with the island and decided to stay. They created a unique blend of local ingredients and international cuisine flavours. Bakaliko offers light sit-down menus (mezedes in greek), a tasting of a variety of wines from the region, as well as local cretan products to take home. You can follow wine tasting, consisting of 5 selected wines chosen to match a wide assortment of artisanal cheese, as well as some traditional Cretan charcuterie.",
@@ -74,7 +74,7 @@
   "contact.form.input.email": "E-mail",
   "contact.form.input.message": "Message",
   "contact.form.input.submit": "Submit",
-  
+
   "not.found.header": "PAGE NOT FOUND IN OUR WINERY",
   "not.found.content": "You just hit a route that doesn&#39;t exist... the sadness.",
   "footer.google.maps": "Google Maps Location",

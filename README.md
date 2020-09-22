@@ -22,7 +22,6 @@ npm install -g gatsby-cli
     gatsby develop
     ```
 
- **Open the source code and start editing!**
+**Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
-

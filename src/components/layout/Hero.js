@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { useIntl, Link } from 'gatsby-plugin-intl';
 
-import BackgroundSection from '../BackgroundImage';
+import BackgroundSection from '../UI/BackgroundImage';
 
 const Hero = ({ lang }) => {
   const { formatMessage } = useIntl();
