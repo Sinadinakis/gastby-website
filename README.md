@@ -1,4 +1,4 @@
-# Gastby-website
+# Gastby Winery Website
 
 This is a website build in gatsby and tailwindCss.
 Node version for gatbsy minimum 10.13.
