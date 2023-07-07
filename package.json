@@ -62,7 +62,7 @@
     "react-select": "^3.0.8",
     "react-swipeable-views": "^0.13.9",
     "styled-components": "^5.0.0",
-    "stylelint": "^13.0.0",
+    "stylelint": "^15.10.1",
     "tailwind.macro": "^1.0.0-alpha.10",
     "tailwindcss": "^1.1.4",
     "tailwindcss-filters": "^3.0.0"
